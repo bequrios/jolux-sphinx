@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Example'
-copyright = 'workshop participant'
-author = 'workshop participant'
+project = 'JOLux'
+copyright = 'Federal Chancellery'
+author = 'Jean-Louis Morard, Benedikt Hitz-Gamper'
 release = '0.1'
 
 
