@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('div.sparql-query').forEach(function(div) {
+    document.querySelectorAll('div.highlight-sparql').forEach(function(div) {
         const codeBlock = div.querySelector('code');
         if (codeBlock) {
             const query = codeBlock.innerText.trim();
