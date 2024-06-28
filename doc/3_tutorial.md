@@ -20,7 +20,13 @@ Let's examine the classes of the constitutions URI through the following SPARQL 
 
 ```sparql
 SELECT DISTINCT * WHERE {
-	<https://fedlex.data.admin.ch/eli/oc/1999/404> a ?class
+	<https://fedlex.data.admin.ch/eli/oc/1999/404> a ?class.
+}
+```
+
+```sparql
+SELECT DISTINCT * WHERE {
+	<https://fedlex.data.admin.ch/eli/oc/1999/404> ?p ?o.
 }
 ```
 
