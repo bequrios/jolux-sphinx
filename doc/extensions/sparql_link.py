@@ -15,7 +15,7 @@ def visit_sparql_query_node_html(self, node):
 def depart_sparql_query_node_html(self, node):
     self.body.append('</code></pre>')
     query = node['query'].replace('\n', ' ').replace('"', '\\"')
-    endpoint = 'https://your-sparql-endpoint.com/sparql'  # Replace with your SPARQL endpoint
+    endpoint = 'https://fedlex.data.admin.ch/sparql'  # Replace with your SPARQL endpoint
     url = f'{endpoint}?query={query}'
     link_html = f'<a href="{url}" target="_blank">Execute Query</a>'
     self.body.append(link_html)

@@ -24,4 +24,10 @@ SELECT DISTINCT * WHERE {
 }
 ```
 
+```SPARQL
+SELECT DISTINCT * WHERE {
+	<https://fedlex.data.admin.ch/eli/oc/1999/404> a ?class
+}
+```
+
 The result shows, that the constitution is something of type `jolux:Work` (besides others). A `jolux:Work` is basically the abstract representation of a law text.
