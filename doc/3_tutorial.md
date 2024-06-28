@@ -18,7 +18,7 @@ This URI can be found on the website of [Fedlex](https://www.fedlex.admin.ch/) t
 
 Let's examine the classes of the constitutions URI through the following SPARQL query:
 
-```SPARQL
+```sparql
 SELECT DISTINCT * WHERE {
 	<https://fedlex.data.admin.ch/eli/oc/1999/404> a ?class
 }
