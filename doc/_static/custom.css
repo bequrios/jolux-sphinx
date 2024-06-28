@@ -1,0 +1,4 @@
+.execute-query-link {
+    margin-left: auto; /* Push the link to the right */
+    margin-right: 10px; /* Add some space between the code block and link */
+}

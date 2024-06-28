@@ -30,3 +30,4 @@ html_static_path = ['_static']
 # add custom js for sparql link generation
 def setup(app):
     app.add_js_file('sparql_link.js')
+    app.add_css_file('custom.css')

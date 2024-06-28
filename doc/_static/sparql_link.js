@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.href = url;
             link.target = '_blank';
             link.innerText = 'Execute Query';
+            link.classList.add('execute-query-link');
             div.appendChild(link);
         }
     });
