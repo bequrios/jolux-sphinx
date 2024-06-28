@@ -12,3 +12,4 @@ JOLux Data Schema!
 
    1_abstract.md
    2_introduction.md
+   3_tutorial.md
