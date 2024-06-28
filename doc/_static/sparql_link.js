@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const link = document.createElement('a');
             link.href = url;
             link.target = '_blank';
-            link.innerText = '&#9658; Execute Query';
+            link.innerText = '▶️ Execute Query';
             link.classList.add('execute-query-link');
             div.appendChild(link);
         }

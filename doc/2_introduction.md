@@ -15,6 +15,7 @@ The legislative resources are described at 4 levels:
 
 | PREFIX | IRI |
 | :--- | :--- |
+| jolux | http://data.legilux.public.lu/resource/ontology/jolux# |
 | schema | [http://schema.org/](http://schema.org) |
 | skos | [http://www.w3.org/2004/02/skos/core#](https://www.w3.org/2009/08/skos-reference/skos.html) |
 | dcterm | [http://purl.org/dc/terms/](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) |
