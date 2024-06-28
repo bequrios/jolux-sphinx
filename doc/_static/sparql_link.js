@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('div.highlight-sparql').forEach(function(div) {
-        const codeBlock = div.querySelector('code');
+        const codeBlock = div.querySelector('pre');
         if (codeBlock) {
             const query = codeBlock.innerText.trim();
             const endpoint = 'https://fedlex.data.admin.ch/sparql';
