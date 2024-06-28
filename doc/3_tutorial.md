@@ -69,7 +69,7 @@ SELECT DISTINCT ?url WHERE {
               jolux:isEmbodiedBy ?manifestation.
   ?manifestation jolux:userFormat <https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a>;
                  jolux:isExemplifiedBy ?url.
-}````
+}```
 
 So, the general connection between Work, Expression and Manifestation is shown in the following image:
 
