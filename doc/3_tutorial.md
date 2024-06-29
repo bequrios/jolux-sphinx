@@ -77,9 +77,12 @@ So, the general connection between Work, Expression and Manifestation is shown i
 ![Work_Expression_Manifestation](img/work_expression_manifestation.svg "Work_Expression_Manifestation")
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowchart TD
+    A(jolux:Work) -->|jolux:isRealizedBy| B(jolux:Expression)
+    B --> |jolux:isEmbodiedBy| C(jolux:Manifestation)
+    C --> |jolux:isExemplifiedBy| D[File URL]
+    style A fill:lightblue
+    style B fill:yellow
+    style C fill:lightgreen
+    style D fill:white
 ```
