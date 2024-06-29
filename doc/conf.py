@@ -28,9 +28,11 @@ myst_enable_extensions = [
     "html_image",
 ]
 
+myst_fence_as_directive = ["mermaid"]
+
 # Mermaid configuration (optional, for specifying version)
-mermaid_version = '8.11.0'  # Specify the version you want to use
-mermaid_js_path = 'https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js'
+# mermaid_version = '8.11.0'  # Specify the version you want to use
+# mermaid_js_path = 'https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js'
 
 
 # -- Options for HTML output -------------------------------------------------
