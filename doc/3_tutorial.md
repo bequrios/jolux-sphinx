@@ -75,3 +75,11 @@ SELECT DISTINCT ?url WHERE {
 So, the general connection between Work, Expression and Manifestation is shown in the following image:
 
 ![Work_Expression_Manifestation](img/work_expression_manifestation.svg "Work_Expression_Manifestation")
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
