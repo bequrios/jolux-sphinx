@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial &mdash; JOLux 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=cc5f492b" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/sparql_link.js?v=f695a40a"></script>
+        <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Introduction" href="2_introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            JOLux
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1_abstract.html">Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#uri">URI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#work-expression-manifestation">Work, Expression, Manifestation</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JOLux</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Tutorial</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/3_tutorial.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tutorial">
+<h1>Tutorial<a class="headerlink" href="#tutorial" title="Link to this heading"></a></h1>
+<p>This tutorial guides through the basics of the JOLux ontology using the federal constitution as an example.</p>
+<section id="uri">
+<h2>URI<a class="headerlink" href="#uri" title="Link to this heading"></a></h2>
+<p>The URI of the federal constitution is <code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/oc/1999/404</span></code>. This URI has some important information encoded:</p>
+<ul class="simple">
+<li><p>the part <code class="docutils literal notranslate"><span class="pre">fedlex.data.admin.ch</span></code> is the namespace for all federal legislative information.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/eli</span></code> stands for <a class="reference external" href="https://op.europa.eu/en/web/eu-vocabularies/eli">European Legislation Identifier</a> and is a effort to make legislation meta data available in a standardized format.</p></li>
+<li><p>the part <code class="docutils literal notranslate"><span class="pre">/oc</span></code> denotes the <strong>Official Compilation</strong>, meaning that this URI identifies something that is part of the official compilation of the federal law. The official compilation basically is the sum of the law.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/1999</span></code> is the year of the publication.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/404</span></code> is some random identifier that has no specific meaning (there is some irony in the federal constitutions having <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP_404">HTTP 404 error</a> as identifier).</p></li>
+</ul>
+<p>This URI can be found on the website of <a class="reference external" href="https://www.fedlex.admin.ch/">Fedlex</a> through a search. If this URI is put into a webbrowser, there is a redirection to https://www.fedlex.admin.ch/eli/oc/1999/404 but this is not the URI of the federal constitution but a website presenting the constitution with some additional meta data.</p>
+</section>
+<section id="work-expression-manifestation">
+<h2>Work, Expression, Manifestation<a class="headerlink" href="#work-expression-manifestation" title="Link to this heading"></a></h2>
+<p>Let’s examine the classes of the constitutions URI through the following SPARQL query:</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="o">*</span> <span class="k">WHERE</span> <span class="p">{</span>
+	<span class="nl">&lt;https://fedlex.data.admin.ch/eli/oc/1999/404&gt;</span> <span class="k">a</span> <span class="nv">?class</span><span class="p">.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The result shows, that the constitution is something of type <code class="docutils literal notranslate"><span class="pre">jolux:Work</span></code> (besides others). A <code class="docutils literal notranslate"><span class="pre">jolux:Work</span></code> is basically the abstract representation of a law text. Is there a connection to an <code class="docutils literal notranslate"><span class="pre">jolux:Expression</span></code>? Let’s find out:</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">PREFIX</span> <span class="nn">jolux</span><span class="p">:</span> <span class="nl">&lt;http://data.legilux.public.lu/resource/ontology/jolux#&gt;</span>
+
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="o">*</span> <span class="k">WHERE</span> <span class="p">{</span>
+	<span class="nl">&lt;https://fedlex.data.admin.ch/eli/oc/1999/404&gt;</span> <span class="nv">?p</span> <span class="nv">?o</span><span class="p">.</span>
+	<span class="nv">?o</span> <span class="k">a</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">Expression</span><span class="p">.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>So there are three <code class="docutils literal notranslate"><span class="pre">jolux:Expression</span></code>s connected via <code class="docutils literal notranslate"><span class="pre">jolux:isRealizedBy</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/oc/1999/404/de</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/oc/1999/404/fr</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/oc/1999/404/it</span></code></p></li>
+</ul>
+<p>So, a <code class="docutils literal notranslate"><span class="pre">jolux:Expression</span></code> is a <strong>language specific</strong> representation of a <code class="docutils literal notranslate"><span class="pre">jolux:Work</span></code>. The connection to the <code class="docutils literal notranslate"><span class="pre">jolux:Manifestation</span></code> for one expression is queried now:</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">PREFIX</span> <span class="nn">jolux</span><span class="p">:</span> <span class="nl">&lt;http://data.legilux.public.lu/resource/ontology/jolux#&gt;</span>
+
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="o">*</span> <span class="k">WHERE</span> <span class="p">{</span>
+	<span class="nl">&lt;https://fedlex.data.admin.ch/eli/oc/1999/404/de&gt;</span> <span class="nv">?p</span> <span class="nv">?o</span><span class="p">.</span>
+	<span class="nv">?o</span> <span class="k">a</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">Manifestation</span><span class="p">.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>resulting in three <code class="docutils literal notranslate"><span class="pre">jolux:Manifestation</span></code>s connected via <code class="docutils literal notranslate"><span class="pre">jolux:isEmbodiedBy</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/oc/1999/404/de/doc</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/oc/1999/404/de/pdf-a</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/oc/1999/404/de/pdf-x</span></code></p></li>
+</ul>
+<p>This means that a <code class="docutils literal notranslate"><span class="pre">jolux:Manifestation</span></code> is a <strong>language and file format specific</strong> representation of a <code class="docutils literal notranslate"><span class="pre">jolux:Work</span></code>. If one wants to get e.g. the PDF document of the federal constitution in German, the following query helps:</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">PREFIX</span> <span class="nn">jolux</span><span class="p">:</span> <span class="nl">&lt;http://data.legilux.public.lu/resource/ontology/jolux#&gt;</span>
+
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="nv">?url</span> <span class="k">WHERE</span> <span class="p">{</span>
+  <span class="nl">&lt;https://fedlex.data.admin.ch/eli/oc/1999/404&gt;</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">isRealizedBy</span> <span class="nv">?expression</span><span class="p">.</span>
+  <span class="nv">?expression</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">language</span> <span class="nl">&lt;http://publications.europa.eu/resource/authority/language/DEU&gt;</span><span class="p">;</span>
+              <span class="nn">jolux</span><span class="p">:</span><span class="nt">isEmbodiedBy</span> <span class="nv">?manifestation</span><span class="p">.</span>
+  <span class="nv">?manifestation</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">userFormat</span> <span class="nl">&lt;https://fedlex.data.admin.ch/vocabulary/user-format/pdf-a&gt;</span><span class="p">;</span>
+                 <span class="nn">jolux</span><span class="p">:</span><span class="nt">isExemplifiedBy</span> <span class="nv">?url</span><span class="p">.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>So, the general connection between Work, Expression and Manifestation is shown in the following image:</p>
+<p><img alt="Work_Expression_Manifestation" src="_images/work_expression_manifestation.svg" /></p>
+<div class="mermaid">
+            flowchart TD
+    A(jolux:Work) --&gt;|jolux:isRealizedBy| B(jolux:Expression)
+    B --&gt; |jolux:isEmbodiedBy| C(jolux:Manifestation)
+    C --&gt; |jolux:isExemplifiedBy| D[File URL]
+    style A fill:lightblue
+    style B fill:yellow
+    style C fill:lightgreen
+    style D fill:white
+        </div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2_introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Federal Chancellery.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
