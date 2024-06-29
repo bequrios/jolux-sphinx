@@ -22,6 +22,17 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
+# MyST configuration
+myst_enable_extensions = [
+    "colon_fence",
+    "html_image",
+]
+
+# Mermaid configuration (optional, for specifying version)
+mermaid_version = '8.11.0'  # Specify the version you want to use
+mermaid_js_path = 'https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js'
+
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
