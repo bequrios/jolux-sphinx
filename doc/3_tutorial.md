@@ -72,12 +72,12 @@ SELECT DISTINCT ?url WHERE {
 }
 ```
 
-So, the general connection between Work, Expression and Manifestation is shown in the following image:
+So, the general connection between {term}`Work`, {term}`jolux:Expression` and {term}`jolux:Manifestation` is shown in the following image:
 
 ![Work_Expression_Manifestation](img/work_expression_manifestation.svg "Work_Expression_Manifestation")
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffffff'}}}%%
+%%{init: {'theme': 'neutral'}}%%
 flowchart TD
     Work(jolux:Work)
     Expression(jolux:Expression)
