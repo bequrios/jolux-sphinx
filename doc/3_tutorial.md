@@ -7,10 +7,10 @@ This tutorial guides through the basics of the JOLux ontology using the federal 
 The URI of the federal constitution is `https://fedlex.data.admin.ch/eli/oc/1999/404`. This URI has some important information encoded:
 
 * the part `fedlex.data.admin.ch` is the namespace for all federal legislative information.
-* `/eli` stands for [European Legislation Identifier](https://op.europa.eu/en/web/eu-vocabularies/eli) and is a effort to make legislation meta data available in a standardized format.
-* the part `/oc` denotes the **Official Compilation**, meaning that this URI identifies something that is part of the official compilation of the federal law. The official compilation basically is the sum of the law.
-* `/1999` is the year of the publication.
-* `/404` is some random identifier that has no specific meaning (there is some irony in the federal constitutions having [HTTP 404 error](https://en.wikipedia.org/wiki/HTTP_404) as identifier).
+* `eli` stands for [European Legislation Identifier](https://op.europa.eu/en/web/eu-vocabularies/eli) and is a effort to make legislation meta data available in a standardized format.
+* the part `oc` denotes the **Official Compilation**, meaning that this URI identifies something that is part of the official compilation of the federal law. The official compilation basically is the sum of the law.
+* `1999` is the year of the publication.
+* `404` is some random identifier that has no specific meaning (there is some irony in the federal constitutions having the same identifier as the [HTTP 404 error](https://en.wikipedia.org/wiki/HTTP_404).
 
 This URI can be found on the website of [Fedlex](https://www.fedlex.admin.ch/) through a search. If this URI is put into a webbrowser, there is a redirection to https://www.fedlex.admin.ch/eli/oc/1999/404 but this is not the URI of the federal constitution but a website presenting the constitution with some additional meta data.
 
@@ -78,11 +78,12 @@ So, the general connection between Work, Expression and Manifestation is shown i
 
 ```mermaid
 flowchart TD
-    A(jolux:Work) -->|jolux:isRealizedBy| B(jolux:Expression)
-    B --> |jolux:isEmbodiedBy| C(jolux:Manifestation)
-    C --> |jolux:isExemplifiedBy| D[File URL]
-    style A fill:lightblue
-    style B fill:yellow
-    style C fill:lightgreen
-    style D fill:white
+    Work(jolux:Work)
+    Expression(jolux:Expression)
+    Manifestation(jolux:Manifestation)
+    Work-->|jolux:isRealizedBy| Expression
+    Expression --> |jolux:isEmbodiedBy| Manifestation
+    Manifestation --> |jolux:isExemplifiedBy| File[File URL]
+
+    linkStyle default stroke-width:1;
 ```

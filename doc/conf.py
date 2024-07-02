@@ -23,12 +23,14 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
 # MyST configuration
-myst_enable_extensions = [
-    "colon_fence",
-    "html_image",
-]
+#myst_enable_extensions = [
+#    "colon_fence",
+#    "html_image",
+#]
 
 myst_fence_as_directive = ["mermaid"]
+
+mermaid_theme = "neutral"
 
 # Mermaid configuration (optional, for specifying version)
 # mermaid_version = '8.11.0'  # Specify the version you want to use
