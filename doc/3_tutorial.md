@@ -77,6 +77,7 @@ So, the general connection between Work, Expression and Manifestation is shown i
 ![Work_Expression_Manifestation](img/work_expression_manifestation.svg "Work_Expression_Manifestation")
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffffff'}}}%%
 flowchart TD
     Work(jolux:Work)
     Expression(jolux:Expression)

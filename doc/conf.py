@@ -30,8 +30,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 myst_fence_as_directive = ["mermaid"]
 
-mermaid_theme = "neutral"
-
 # Mermaid configuration (optional, for specifying version)
 # mermaid_version = '8.11.0'  # Specify the version you want to use
 # mermaid_js_path = 'https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js'
