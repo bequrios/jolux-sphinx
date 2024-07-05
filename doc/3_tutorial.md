@@ -72,11 +72,15 @@ SELECT DISTINCT ?url WHERE {
 }
 ```
 
-So, the general connection between {term}`Work`, {term}`jolux:Expression` and {term}`jolux:Manifestation` is shown in the following image:
+So, the general connection between {term}`Work`, {term}`Expression` and {term}`Manifestation` is shown in the following image:
 
+:::{figure-md} wem
 ![Work_Expression_Manifestation](img/work_expression_manifestation.svg "Work_Expression_Manifestation")
 
-```mermaid
+Relation between jolux:Work, jolux:Expression und jolux:Manifestation.
+:::
+
+:::{mermaid}
 %%{init: {'theme': 'neutral'}}%%
 flowchart TD
     Work(jolux:Work)
@@ -87,4 +91,4 @@ flowchart TD
     Manifestation --> |jolux:isExemplifiedBy| File[File URL]
 
     linkStyle default stroke-width:1;
-```
+:::

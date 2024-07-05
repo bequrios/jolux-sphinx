@@ -21,10 +21,11 @@ extensions = ['myst_parser',
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-myst_fence_as_directive = ["mermaid"]
+#myst_fence_as_directive = ["mermaid"]
 
 myst_enable_extensions = ["deflist", 
-                          "attrs_block"]
+                          "attrs_block",
+                          "colon_fence"]
 
 
 # -- Options for HTML output -------------------------------------------------
