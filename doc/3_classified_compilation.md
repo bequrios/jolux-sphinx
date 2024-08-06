@@ -1,16 +1,24 @@
-# Tutorial
+# Classified Compilation (CC)
 
-This tutorial guides through the basics of the JOLux ontology using the federal constitution as an example.
+The *classified compilation (CC)* (also known as systematic compilation) is according to the [lexicon of parliamentary terms](https://www.parlament.ch/en/%C3%BCber-das-parlament/parlamentsw%C3%B6rterbuch/parlamentsw%C3%B6rterbuch-detail?WordId=216) a regularly updated and revised collection of the law texts of the official compilation.
 
-## URI
+This part explains all the important objects that build an entry in the CC and it does so with the help of the federal constitution.
 
-The URI of the federal constitution is `https://fedlex.data.admin.ch/eli/oc/1999/404`. This URI has some important information encoded:
+## jolux:ConsolidationAbstract
 
-* the part `fedlex.data.admin.ch` is the namespace for all federal legislative information.
-* `eli` stands for [European Legislation Identifier](https://op.europa.eu/en/web/eu-vocabularies/eli) and is a effort to make legislation meta data available in a standardized format.
-* the part `oc` denotes the **Official Compilation**, meaning that this URI identifies something that is part of the official compilation of the federal law. The official compilation basically is the sum of the law.
-* `1999` is the year of the publication.
-* `404` is some random identifier that has no specific meaning (there is some irony in the federal constitutions having the same identifier as the [HTTP 404 error](https://en.wikipedia.org/wiki/HTTP_404).
+Every entry in the CC is of type jolux:ConsolidationAbstract. The term abstract is not so much meant as a summary but as an abstraction.
+
+### URI
+
+The URI of an entry in the CC contains the following parts:
+
+* Namespace and path: `https://fedlex.data.admin.ch/` is the namespace for all federal legislative information.
+* `eli/` stands for [European Legislation Identifier](https://op.europa.eu/en/web/eu-vocabularies/eli) and is a effort to make legislation meta data available in a standardized format.
+* the part `cc/` denotes the classified compilation, meaning that this URI identifies something that is part of the classified compilation of the federal law.
+* `YYYY/` is the year of the publication.
+* `ID` some random identifier that has no specific meaning.
+
+Example: The full URI of the federal constitution is `https://fedlex.data.admin.ch/eli/oc/1999/404`. There is some irony in the federal constitution having the same identifier as the [HTTP 404 error](https://en.wikipedia.org/wiki/HTTP_404).
 
 This URI can be found on the website of [Fedlex](https://www.fedlex.admin.ch/) through a search. If this URI is put into a webbrowser, there is a redirection to https://www.fedlex.admin.ch/eli/oc/1999/404 but this is not the URI of the federal constitution but a website presenting the constitution with some additional meta data.
 
