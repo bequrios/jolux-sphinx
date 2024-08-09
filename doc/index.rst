@@ -10,8 +10,9 @@ JOLux Data Schema!
    :maxdepth: 2
    :caption: Contents:
 
-   1_abstract.md
-   2_introduction.md
-   3_classified_compilation.md
-   4_consultation.md
-   5_reference.md
+   introduction.md
+   cc.md
+   impact.md
+   oc.md
+   consultation.md
+   reference.md
