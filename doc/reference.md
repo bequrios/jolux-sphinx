@@ -1,14 +1,29 @@
-# JOLux Reference
+# Reference
 
-{.glossary}
-Consultation
-: The representation of a process of asking organizations and people of giving feedback to a draft of a legislative document.
+## JOLux Classes
 
-Work
-: The abstract representation of a law text (language and file format agnostic).
+- [Expression](#Expression)
+- [LegalResourceImpact](#LegalResourceImpact)
+- [Manifestation](#Manifestation)
+- [Work](#Work)
 
-Expression
-: The language specific representation of a law text (file format agnostic).
+## Jolux Properties
 
-Manifestation
-: The language and file format specific representation of a law text.
+Dates:
+
+- [dateDocument](#dateDocument)
+- [dateEntryInForce](#dateEntryInForce)
+- [publicationDate](#publicationDate)
+
+Vocabularies:
+
+- [legalRessourceGenre](vocabularies.md#type-of-the-act)
+- [typeDocument](vocabularies.md#text-types)
+
+## Concepts
+
+- [Classified Compilation (CC)](classified_compilation.md)
+- [Dates](dates.md)
+- [Impacts](impacts.md)
+- [Official Compilation (OC)](official_compilation.md)
+- [Vocabularies](vocabularies.md)

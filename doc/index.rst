@@ -11,8 +11,11 @@ JOLux Data Schema!
    :caption: Contents:
 
    introduction.md
-   cc.md
-   impact.md
-   oc.md
+   abstraction_levels.md
+   dates.md
+   vocabularies.md
+   official_compilation.md
+   impacts.md
+   classified_compilation.md
    consultation.md
    reference.md

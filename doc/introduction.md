@@ -2,31 +2,21 @@
 
 ## Fedlex
 
-The Swiss federal government operates the **Fedlex platform** to publish the **federal law**. The platform provides a [website](https://www.fedlex.admin.ch/en) as frontend with easy navigable functions. For some cases, it is beneficial to work directly with the raw data (that is the basis for the frontend website) that is available in [RDF](https://www.w3.org/TR/rdf11-primer/) format through a [SPARQL GUI](https://fedlex.data.admin.ch/en-CH/sparql).
+The Swiss federal government operates the **Fedlex** platform to publish the **federal law**. This platform provides a [website](https://www.fedlex.admin.ch/en) as frontend with easy navigable functions. For some cases, it is beneficial to work directly with the raw data that is the basis for the frontend website. This raw data is available in [RDF](https://www.w3.org/TR/rdf11-primer/) format through a [SPARQL GUI](https://fedlex.data.admin.ch/en-CH/sparql) and a SPARQL endpoint (https://fedlex.data.admin.ch/sparqlendpoint).
 
 ## JOLux
 
-The **JOLux schema** is an RDF data schema for describing **legislative resources and their relationships**.
+The raw data of the Fedlex platform in RDF is modelled according to the **JOLux schema**. JOLux is an RDF schema for describing **legislative resources and their relationships**.
 
 JOLux is based on recent developments in bibliographical description, adapting the [FRBR model](https://repository.ifla.org/handle/123456789/811) (Functional requirements for Bibliographic Records, developed by the [IFLA](https://www.ifla.org/)) in order to describe legislative resources.
 
-## Work, Expression and Manifestation
+This website's goal is to document the JOLux schema and help users to find their way into the RDF data of the Fedlex platform and make the most use of it.
 
-The different legislative resources are always described through different levels of abstraction. The main levels are:
+## How to Use this Website
 
-- jolux:Work
-- jolux:Expression
-- jolux:Manifestation
+This website has sub-pages for all the important concepts. These sub-pages describe in prose the concept and include within the text some kind of "definition boxes". These boxes are all linked in the [reference](reference.md).
 
-The level **jolux:Work** is a general abstraction for all the different legal resources whereas the **jolux:Expression** is a language specific representation of the jolux:Work and the **jolux:Manifestation** is a document format specific representation of the jolux:Expression. All the entries with type jolux:Work have additional types set to differentiate between the diverse legal resources.
-
-The vocabulary used to connect jolux:Work, jolux:Expression and jolux:Manifestation is shown in the following figure:
-
-:::{figure-md} wem
-![](img/wem.svg)
-
-Relation between jolux:Work, jolux:Expression und jolux:Manifestation.
-:::
+This website is not the basis for the JOLux data schema meaning that there is no completeness of all the aspects of JOLux in this documentation. So this website can not be used to model data according to the JOLux schema but rather to understand data that is already modelled with help of JOLux.
 
 ## Fedlex URI and URL
 
@@ -39,7 +29,7 @@ Examples for the federal constitution in the CC:
 - URI: https://fedlex.data.admin.ch/eli/cc/1999/404
 - URL: https://www.fedlex.admin.ch/eli/cc/1999/404
 
-The easiest way to have a graph like representation of a Fedlex URI is to put it on the [metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata) of the Fedlex platform. Links to the metadata viewer with prefilled URI can be programmatically created via URL parameter `value`:
+The easiest way to have a graph like representation of a Fedlex URI (and not a redirection to the URL) is to put it into the [metadata viewer](https://fedlex.data.admin.ch/en-CH/metadata) of the Fedlex platform. Links to the metadata viewer with prefilled URI can also be programmatically created via URL parameter `value`:
 
 `https://fedlex.data.admin.ch/en-CH/metadata?value=https://fedlex.data.admin.ch/eli/cc/1999/404`
 
@@ -50,9 +40,10 @@ The following namespaces are used throughout this documentation:
 | PREFIX | URI |
 | :--- | :--- |
 | jolux | http://data.legilux.public.lu/resource/ontology/jolux# |
-| schema | [http://schema.org/](http://schema.org) |
-| skos | [http://www.w3.org/2004/02/skos/core#](https://www.w3.org/2009/08/skos-reference/skos.html) |
-| dcterm | [http://purl.org/dc/terms/](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) |
-| xsd | [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#) |
-| rdfs | [http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#) |
-| rdf | [http://www.w3.org/1999/02/22-rdf-syntax-ns#](http://www.w3.org/1999/02/22-rdf-syntax-ns#) |
+| schema | http://schema.org/ |
+| skos | http://www.w3.org/2004/02/skos/core# |
+| dcterm | http://purl.org/dc/terms/ |
+| xsd | http://www.w3.org/2001/XMLSchema# |
+| rdfs | http://www.w3.org/2000/01/rdf-schema# |
+| rdf | http://www.w3.org/1999/02/22-rdf-syntax-ns# |
+| owl | http://www.w3.org/2002/07/owl# |

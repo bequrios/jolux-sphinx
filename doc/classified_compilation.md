@@ -6,7 +6,7 @@ This part explains all the important objects that build an entry in the CC and i
 
 ## General Structure
 
-Every entry in the CC is of type jolux:ConsolidationAbstract. It is a consolidation because it consolidates different entries from the OC into a single document that shows the current state. The term *abstract* is not so much meant as a summary but as an abstraction. At the same time, every jolux:ConsolidationAbstract is also a jolux:Work.
+Every entry in the CC is of type jolux:ConsolidationAbstract. It is a consolidation because it consolidates different entries from the OC into a single document that shows the current state. The term *abstract* is not so much meant as a summary but as an abstraction. At the same time, every jolux:ConsolidationAbstract is also a [jolux:Work](#Work).
 
 This jolux:ConsolidationAbstract has different versions to represent the state at different times. All these versions are connected to the jolux:ConsolidationAbstract through jolux:isMemberOf.
 
