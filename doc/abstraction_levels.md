@@ -28,10 +28,24 @@ The owl:Class **jolux:Expression** is a language specific representation of a jo
 The owl:Class **jolux:Manifestation** is a file-format specific representation of a jolux:Expression entity. So an jolux:Manifestation is a language and file-format specific representation of a jolux:Work.
 :::
 
-So basically, [jolux:Work](#Work), [jolux:Expression](#Expression) and [jolux:Manifestation](#Manifestation) always come together to form a rich representation of a legal resource. The vocabulary used to connect these abstraction levels is shown in the following figure:
+So basically, [jolux:Work](#Work), [jolux:Expression](#Expression) and [jolux:Manifestation](#Manifestation) always come together to form a rich representation of a legal resource. The vocabulary used to connect these abstraction levels is as following:
 
-:::{figure-md} wem
-![](img/wem.svg)
+:::{admonition} jolux:isRealizedBy
+:class: note
+:name: isRealizedBy
+The object property **jolux:isRealizedBy** points from a [jolux:Work](#Work) to a [jolux:Expression](#Expression).
+:::
+
+:::{admonition} jolux:isEmbodiedBy
+:class: note
+:name: isEmbodiedBy
+The object property **jolux:isEmbodiedBy** points from a [jolux:Expression](#Expression) to a [jolux:Manifestation](#Manifestation).
+:::
+
+The following figure shows the different abstraction levels and the object properties to connect them:
+
+:::{figure-md} abs_levels
+![](img/abstraction_levels.svg)
 
 Relation between jolux:Work, jolux:Expression und jolux:Manifestation.
 :::

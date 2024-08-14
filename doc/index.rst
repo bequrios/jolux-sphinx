@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-JOLux Data Schema!
+JOLux Ontology!
 ===================================
 
 .. toctree::
@@ -15,7 +15,7 @@ JOLux Data Schema!
    dates.md
    vocabularies.md
    official_compilation.md
-   impacts.md
    classified_compilation.md
-   consultation.md
+   impacts.md
+   consultations.md
    reference.md

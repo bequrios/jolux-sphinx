@@ -1,4 +1,4 @@
-# Impact
+# Impacts
 
 Impacts is what connect entries in the CC and OC. The entries in the CC are consolidations of entries in the **Official Compilation** (OC). This means that entries in the OC usually have an impact on entries in the CC.
 

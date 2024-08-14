@@ -13,7 +13,7 @@ In distinction from the OC, the current consolidated law texts are modelled in t
 
 ## Example
 
-Throughout this sub-page, the federal constitution is used as an example of an entry in the official compilation.
+Throughout this sub-page, the federal constitution is used as an example of an entry in the OC.
 
 - URI: https://fedlex.data.admin.ch/eli/oc/1999/404
 - URL: https://www.fedlex.admin.ch/eli/oc/1999/404
@@ -35,10 +35,10 @@ Every entry in the OC is of type jolux:Act.
 :::{admonition} jolux:Act
 :class: note
 :name: Act
-The owl:Class **jolux:Act** is used for entries in the Official Compilation and the Federal Gazette. It is of the same [abstraction level](abstraction_levels.md) as [jolux:Work](#Work).
+The owl:Class **jolux:Act** is used for entries in the Official Compilation and the Federal Gazette. It is of the same [abstraction level](abstraction_levels.md) as [jolux:Work](#Work) and all jolux:Act are also jolux:Work.
 :::
 
-At the same time, these entries are also of rdf:type jolux:Work and therefore, jolux:Expression and jolux:Manifestation are available for all entries.
+For jolux:Act, the additional [abstraction levels](abstraction_levels.md) jolux:Expression and jolux:Manifestation are also available for all entries.
 
 The following figure shows the general structure of an entry in the OC:
 
@@ -69,23 +69,26 @@ SELECT ?manifestation WHERE {
 
 As the jolux:Act is a very abstract representation of a law text, there is e.g. no title of the law attached to the jolux:Act because this is something language specific and therefore added to the [jolux:Expression](#Expression) of the jolux:Act.
 
-## Details
-
-### Datatype Properties
+## Datatype Properties
 
 - [jolux:publicationDate](#publicationDate)
 - [jolux:dateEntryInForce](#dateEntryInForce)
 - [jolux:dateDocument](#dateDocument)
 
-### Object Properties
+## Object Properties
 
-Object properties that point to a vocabulary entry
+Object properties that point to a vocabulary entry:
 
 - jolux:processType
 - [jolux:typeDocument](vocabularies.md#text-types)
 - jolux:classifiedByTaxonomyEntry
 - [jolux:legalRessourceGenre](vocabularies.md#type-of-the-act)
 - jolux:responsibilityOf
+
+Object properties that point to an individual:
+
+- [jolux:isRealizedBy](#isRealizedBy)
+- jolux:isPartOf
 
 ## Additional SPARQL Queries
 

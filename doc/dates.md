@@ -1,8 +1,8 @@
 # Dates
 
-Concerning legislation, there is a number of dates that are important during the legislative process. All the date literals are modelled with datatype xsd:date.
+Concerning legislation, there are a number of dates that are important during the legislative process. All the date literals are modelled with datatype `xsd:date`.
 
-## Abstraction Level Work
+## Dates relevant to jolux:Work
 
 On the abstraction level of [jolux:Work](#Work), the following dates are important:
 
@@ -22,4 +22,12 @@ The property jolux:dateEntryInForce denotes the date of entry into force of the 
 :class: note
 :name: dateDocument
 The property jolux:dateDocument denotes the date of the decree of the law.
+:::
+
+## Dates relevant to jolux:Consolidation
+
+:::{admonition} jolux:dateApplicability
+:class: note
+:name: dateApplicability
+The property jolux:dateApplicability denotes the date of the first applicability of the jolux:Consolidation.
 :::

@@ -4,8 +4,17 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="9" value="&lt;b&gt;Act&lt;br&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#67A9CF;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
+                <mxCell id="9" value="&lt;b&gt;Work&lt;/b&gt;&lt;br&gt;&lt;i&gt;abstraction&lt;/i&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#67A9CF;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
                     <mxGeometry x="80" y="80" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="xsd:string" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="530" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="isExemplifiedBy" style="endArrow=block;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="16" target="11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-416" y="420" as="sourcePoint"/>
+                        <mxPoint x="280" y="540" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="14" value="&lt;span style=&quot;background-color: rgb(209, 229, 240);&quot;&gt;isRealizedBy&lt;/span&gt;" style="endArrow=block;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="9" target="15" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -14,10 +23,10 @@
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="15" value="&lt;b&gt;Expression&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#FDDBC7;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
+                <mxCell id="15" value="&lt;b&gt;Expression&lt;/b&gt;&lt;br&gt;&lt;i&gt;language&lt;/i&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#FDDBC7;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
                     <mxGeometry x="80" y="280" width="120" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="&lt;b&gt;Manifestation&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#EF8A62;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
+                <mxCell id="16" value="&lt;b&gt;Manifestation&lt;/b&gt;&lt;br&gt;&lt;i&gt;file format&lt;/i&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;glass=0;comic=0;strokeColor=#000000;strokeWidth=2;fillColor=#EF8A62;gradientColor=none;fontSize=14;fontColor=#000000;align=center;" parent="1" vertex="1">
                     <mxGeometry x="80" y="480" width="120" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="&lt;span style=&quot;background-color: rgb(209, 229, 240);&quot;&gt;isEmbodiedBy&lt;/span&gt;" style="endArrow=block;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="15" target="16" edge="1">

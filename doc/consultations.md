@@ -1,4 +1,4 @@
-# Consultation
+# Consultations
 
 A consultation is the process of asking organizations and people for feedback to a draft of a legislative document.
 

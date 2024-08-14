@@ -34,6 +34,22 @@ myst_enable_extensions = ["deflist",
 
 #html_theme = 'sphinx_rtd_theme'
 html_theme = 'sphinx_book_theme'
+
+html_theme_options = {
+    "repository_url": "https://github.com/bequrios/jolux-sphinx",
+    "path_to_docs": "doc",
+    "use_repository_button": True,
+    "use_source_button": True,
+    "use_edit_page_button": True,
+    "use_issues_button": True,
+    "logo": {
+        "text": "JOLux Ontology",
+        "image_light": "img/logo-ch.svg",
+        "image_dark": "img/logo-ch.svg",
+        "link": "https://www.bk.admin.ch/bk/en/home.html"
+    }
+}
+
 html_static_path = ['_static']
 
 # add custom js for sparql link generation
