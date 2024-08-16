@@ -3,12 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-JOLux Ontology!
-===================================
-
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :hidden:
 
    introduction.md
    abstraction_levels.md
@@ -17,5 +14,8 @@ JOLux Ontology!
    official_compilation.md
    classified_compilation.md
    impacts.md
-   consultations.md
    reference.md
+
+.. raw:: html
+
+   <meta http-equiv="refresh" content="0; url=introduction.html">

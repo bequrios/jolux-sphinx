@@ -60,6 +60,14 @@ The connection between jolux:Consolidation and jolux:ConsolidationAbstract is ma
 The object property **jolux:isMemberOf** is used to connect a [jolux:Consolidation](#Consolidation) to a [jolux:ConsolidationAbstract](#ConsolidationAbstract)
 :::
 
+Each jolux:ConsolidationAbstract is based on an jolux:Act through jolux:basicAct.
+
+:::{admonition} jolux:basicAct
+:class: note
+:name: basicAct
+The object property **jolux:basicAct** is used to connect a [jolux:ConsolidationAbstract](#ConsolidationAbstract) to a [jolux:Act](#Act). The connected act is the first version of the consolidation.
+:::
+
 The following figure shows the general structure of an entry in the CC:
 
 :::{figure-md} cc_general
@@ -92,7 +100,7 @@ Object properties that point to a vocabulary entry:
 
 Object properties that point to an individual:
 
-- jolux:basicAct
+- [jolux:basicAct](#basicAct)
 - [jolux:isRealizedBy](#isRealizedBy)
 
 ### jolux:Consolidation

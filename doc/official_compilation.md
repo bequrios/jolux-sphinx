@@ -82,7 +82,7 @@ Object properties that point to a vocabulary entry:
 - jolux:processType
 - [jolux:typeDocument](vocabularies.md#text-types)
 - jolux:classifiedByTaxonomyEntry
-- [jolux:legalRessourceGenre](vocabularies.md#type-of-the-act)
+- [jolux:legalRessourceGenre](vocabularies.md#act-types)
 - jolux:responsibilityOf
 
 Object properties that point to an individual:
