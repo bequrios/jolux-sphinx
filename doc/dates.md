@@ -31,3 +31,11 @@ The property jolux:dateDocument denotes the date of the decree of the law.
 :name: dateApplicability
 The property jolux:dateApplicability denotes the date of the first applicability of the jolux:Consolidation.
 :::
+
+## Dates relevant to jolux:LegalResourceImpact
+
+:::{admonition} jolux:legalResourceImpactHasDateEntryInForce
+:class: note
+:name: legalResourceImpactHasDateEntryInForce
+The property jolux:legalResourceImpactHasDateEntryInForce denotes the date of the jolux:LegalResourceImpact.
+:::

@@ -47,7 +47,8 @@ html_theme_options = {
         "image_light": "img/logo-ch.svg",
         "image_dark": "img/logo-ch.svg",
         "link": "https://www.bk.admin.ch/bk/en/home.html"
-    }
+    },
+    "navigation_depth": 2
 }
 
 html_static_path = ['_static']

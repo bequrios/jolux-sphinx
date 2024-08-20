@@ -110,7 +110,7 @@ Object properties that point to an individual:
 - [jolux:isMemberOf](#isMemberOf)
 - [jolux:isRealizedBy](#isRealizedBy)
 
-## Additional SPARQL Queries
+## SPARQL Examples
 
 The following SPARQL query shows all the different versions of the federal constitution:
 

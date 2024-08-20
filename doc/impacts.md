@@ -36,15 +36,32 @@ The following figure shows the connection between entries in the OC and CC troug
 Connection between entries in the Official Compilation and the Classified Compilation through impacts.
 :::
 
-As it is shown in the figure above, the connection between jolux:LegalResourceImpact and the entries in the OC and CC is not direct but through an object of class jolux:LegalResourceSubdivision.
+As it is shown in the figure above, the connection between jolux:LegalResourceImpact and the entries in the OC and CC is not direct but through [jolux:LegalResourceSubdivision](#LegalResourceSubdivision). The predicates used to connect the source and the target of the impact are jolux:impactFromLegalResource and jolux:impactToLegalResource.
 
-:::{admonition} jolux:LegalResourceSubdivision
+:::{admonition} jolux:impactFromLegalResource
 :class: note
-:name: LegalResourceSubdivision
-The class **jolux:LegalResourceSubdivision** is used to structure each law text into units: Article (basic unit) and elements above and below this in the hierarchy, as well as annexes and other elements. The concrete unit is attached by using [jolux:legalResourceSubdivisionType](vocabularies.md#subdivision-types).
+:name: impactFromLegalResource
+The object predicate **jolux:impactFromLegalResource** is used to connect a jolux:LegalResourceImpact to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) as a source of the impact.
 :::
 
-## Additional SPARQL Queries
+:::{admonition} jolux:impactToLegalResource
+:class: note
+:name: impactToLegalResource
+The object predicate **jolux:impactToLegalResource** is used to connect a jolux:LegalResourceImpact to a [jolux:LegalResourceSubdivision](#LegalResourceSubdivision) as a target of the impact.
+:::
+
+## Datatype Properties
+
+- [jolux:legalResourceImpactHasDateEntryInForce](#legalResourceImpactHasDateEntryInForce)
+
+## Object Properties
+
+- [jolux:legalResourceImpactHasType](vocabularies.md#impact-types)
+- [jolux:impactFromLegalResource](#impactFromLegalResource)
+- [jolux:impactToLegalResource](#impactToLegalResource)
+- jolux:impactConsolidatedBy
+
+## SPARQL Examples
 
 The following query shows all the entries in the OC, that have an impact on the federal constitution:
 

@@ -23,6 +23,25 @@ SELECT ?term ?label WHERE {
 }
 ```
 
+## Impact Types
+
+- URI: https://fedlex.data.admin.ch/vocabulary/impact-type
+- Description: The **impact types** vocabulary is used to classify the type of a jolux:LegalResourceImpact.
+- Predicates: jolux:legalResourceImpactHasType
+
+The following SPARQL query shows all the entries of this vocabulary with its labels:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX jolux: <http://data.legilux.public.lu/resource/ontology/jolux#>
+SELECT ?term ?label WHERE {
+    ?term skos:inScheme <https://fedlex.data.admin.ch/vocabulary/impact-type>;
+        skos:prefLabel ?label.
+    FILTER NOT EXISTS {?term a skos:Collection}
+    FILTER (lang(?label) = "en")
+}
+```
+
 ## Subdivision Types
 
 - URI: https://fedlex.data.admin.ch/vocabulary/subdivision-type

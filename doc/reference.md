@@ -2,12 +2,16 @@
 
 ## JOLux Classes
 
+- [Act](#Act)
+- [Consolidation](#Consolidation)
+- [ConsolidationAbstract](#ConsolidationAbstract)
 - [Expression](#Expression)
 - [LegalResourceImpact](#LegalResourceImpact)
+- [LegalResourceSubdivision](#LegalResourceSubdivision)
 - [Manifestation](#Manifestation)
 - [Work](#Work)
 
-## Jolux Datatype Properties
+## JOLux Datatype Properties
 
 Dates:
 
@@ -18,14 +22,14 @@ Dates:
 
 ## JOLux Object Properties
 
-Vocabularies:
+Link to vocabulary entries:
 
 - classifiedByTaxonomyEntry
 - inForceStatus
 - [legalRessourceGenre](vocabularies.md#type-of-the-act)
 - [typeDocument](vocabularies.md#text-types)
 
-Individuals:
+Link to individuals:
 
 - [basicAct](#basicAct)
 - [isEmbodiedBy](#isEmbodiedBy)

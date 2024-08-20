@@ -90,7 +90,7 @@ Object properties that point to an individual:
 - [jolux:isRealizedBy](#isRealizedBy)
 - jolux:isPartOf
 
-## Additional SPARQL Queries
+## SPARQL Examples
 
 The following SPARQL query shows all the different jolux:Act that have the legal genre "Basic legislation" and are not yet in force.
 
