@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Consultations &#8212; JOLux 0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=cc5f492b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=e1a75a79"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/sparql_link.js?v=f695a40a"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'consultations';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+     
+  
+
+<a class="navbar-brand logo" href="https://www.bk.admin.ch/bk/en/home.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo-ch.svg" class="logo__image only-light" alt=""/>
+    <script>document.write(`<img src="_static/logo-ch.svg" class="logo__image only-dark" alt=""/>`);</script>
+  
+  
+    <p class="title logo__title">JOLux Ontology</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Content</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="abstraction_levels.html">Abstraction Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dates.html">Dates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vocabularies.html">Vocabularies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="official_compilation.html">Official Compilation (OC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classified_compilation.html">Classified Compilation (CC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="impacts.html">Impacts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subdivisions.html">Subdivisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/bequrios/jolux-sphinx" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/bequrios/jolux-sphinx/blob/main/doc/consultations.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/bequrios/jolux-sphinx/edit/main/doc/consultations.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/bequrios/jolux-sphinx/issues/new?title=Issue%20on%20page%20%2Fconsultations.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/consultations.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Consultations</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultation">jolux:Consultation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uri">URI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#literals">Literals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outgoing-relations">Outgoing Relations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#incoming-relations">Incoming Relations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultationtask">jolux:ConsultationTask</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultationphase">jolux:ConsultationPhase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Literals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Outgoing Relations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-positionstatementpublication">jolux:PositionStatementPublication</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Outgoing Relations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-resultofaconsultationpublication">jolux:ResultOfAConsultationPublication</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Outgoing Relations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-representation">Visual Representation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-queries">Useful Queries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planned-consultations">Planned Consultations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#impacted-legal-resources">Impacted Legal Resources</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="consultations">
+<h1>Consultations<a class="headerlink" href="#consultations" title="Link to this heading">#</a></h1>
+<p>A consultation is the process of asking organizations and people for feedback to a draft of a legislative document.</p>
+<section id="jolux-consultation">
+<h2>jolux:Consultation<a class="headerlink" href="#jolux-consultation" title="Link to this heading">#</a></h2>
+<section id="uri">
+<h3>URI<a class="headerlink" href="#uri" title="Link to this heading">#</a></h3>
+<p>The URI of a consultation contains the following parts:</p>
+<ul class="simple">
+<li><p>Namespace and path: <code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/dl/proj/</span></code></p></li>
+<li><p>Year with 4 digits</p></li>
+<li><p>Arbitrary identifier number</p></li>
+<li><p>Task starting with <code class="docutils literal notranslate"><span class="pre">cons_</span></code> for consultation and a running number</p></li>
+</ul>
+<p>Example: <code class="docutils literal notranslate"><span class="pre">https://fedlex.data.admin.ch/eli/dl/proj/2022/89/cons_1</span></code></p>
+</section>
+<section id="literals">
+<h3>Literals<a class="headerlink" href="#literals" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Type of Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>jolux:eventTitle</p></td>
+<td><p>rdf:langString</p></td>
+</tr>
+<tr class="row-odd"><td><p>jolux:eventId</p></td>
+<td><p>xsd:string</p></td>
+</tr>
+<tr class="row-even"><td><p>jolux:eventDescription</p></td>
+<td><p>rdf:langString</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="outgoing-relations">
+<h3>Outgoing Relations<a class="headerlink" href="#outgoing-relations" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Type of Value / Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>jolux:consultationStatus</p></td>
+<td><p>one of <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/consultation-status">https://fedlex.data.admin.ch/vocabulary/consultation-status</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>jolux:hasSubTask</p></td>
+<td><p>a jolux:ConsultationTask</p></td>
+</tr>
+<tr class="row-even"><td><p>jolux:foreseenImpactToLegalResource</p></td>
+<td><p>a jolux:Work from the classified compilation (CC)</p></td>
+</tr>
+<tr class="row-odd"><td><p>rdfs:type</p></td>
+<td><p>jolux:Consultation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="incoming-relations">
+<h3>Incoming Relations<a class="headerlink" href="#incoming-relations" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Type of Value</p></th>
+<th class="head"><p>Property</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>a jolux:Draft</p></td>
+<td><p>jolux:draftHasTask</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="jolux-consultationtask">
+<h2>jolux:ConsultationTask<a class="headerlink" href="#jolux-consultationtask" title="Link to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">jolux:ConsultationTask</span></code> contains most of the important information from a consultation. Completed consultations contain three different <code class="docutils literal notranslate"><span class="pre">jolux:ConsultationTask</span></code> differentiated by additional classes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">jolux:ConsultationPhase</span></code> with URI slug <code class="docutils literal notranslate"><span class="pre">cons-open</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jolux:PositionStatementPublication</span></code> with URI slug <code class="docutils literal notranslate"><span class="pre">cons-pos</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jolux:ResultOfAConsultationPublication</span></code> with URI slug <code class="docutils literal notranslate"><span class="pre">cons-result</span></code></p></li>
+</ul>
+</section>
+<section id="jolux-consultationphase">
+<h2>jolux:ConsultationPhase<a class="headerlink" href="#jolux-consultationphase" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Literals<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Type of Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>jolux:eventStartDate</p></td>
+<td><p>xsd:date</p></td>
+<td><p>Begin of the consultation</p></td>
+</tr>
+<tr class="row-odd"><td><p>jolux:eventEndDate</p></td>
+<td><p>xsd:date</p></td>
+<td><p>End of the consultation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id2">
+<h3>Outgoing Relations<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Type of Value / Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>jolux:institutionInChargeOfTheEvent</p></td>
+<td><p>one of <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/legal-institutions">https://fedlex.data.admin.ch/vocabulary/legal-institutions</a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>jolux:institutionInChargeOfTheEventLevel2</p></td>
+<td><p>one of <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/legal-institutions">https://fedlex.data.admin.ch/vocabulary/legal-institutions</a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>jolux:opinionIsAboutDraftDocument</p></td>
+<td><p>a jolux:Work</p></td>
+<td><p>The subject of the consultation</p></td>
+</tr>
+<tr class="row-odd"><td><p>jolux:opinionHasDraftRelatedDocument</p></td>
+<td><p>a jolux:Work</p></td>
+<td><p>Accompanying documents</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="jolux-positionstatementpublication">
+<h2>jolux:PositionStatementPublication<a class="headerlink" href="#jolux-positionstatementpublication" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>Outgoing Relations<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Type of Value / Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>jolux:institutionInChargeOfTheEvent</p></td>
+<td><p>one of <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/legal-institutions">https://fedlex.data.admin.ch/vocabulary/legal-institutions</a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>jolux:institutionInChargeOfTheEventLevel2</p></td>
+<td><p>one of <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/legal-institutions">https://fedlex.data.admin.ch/vocabulary/legal-institutions</a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>jolux:opinionHasDraftRelatedDocument</p></td>
+<td><p>a jolux:Work</p></td>
+<td><p>All consultation comments</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="jolux-resultofaconsultationpublication">
+<h2>jolux:ResultOfAConsultationPublication<a class="headerlink" href="#jolux-resultofaconsultationpublication" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>Outgoing Relations<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Type of Value / Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>jolux:institutionInChargeOfTheEvent</p></td>
+<td><p>one of <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/legal-institutions">https://fedlex.data.admin.ch/vocabulary/legal-institutions</a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>jolux:institutionInChargeOfTheEventLevel2</p></td>
+<td><p>one of <a class="reference external" href="https://fedlex.data.admin.ch/vocabulary/legal-institutions">https://fedlex.data.admin.ch/vocabulary/legal-institutions</a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>jolux:opinionHasDraftRelatedDocument</p></td>
+<td><p>a jolux:Work</p></td>
+<td><p>Report on the results of the consultation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="visual-representation">
+<h2>Visual Representation<a class="headerlink" href="#visual-representation" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="consultation">
+<img alt="consultation" src="_images/consultation.svg" />
+<figcaption>
+<p><span class="caption-text">Overview of a <code class="docutils literal notranslate"><span class="pre">jolux:Consultation</span></code></span><a class="headerlink" href="#consultation" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="useful-queries">
+<h2>Useful Queries<a class="headerlink" href="#useful-queries" title="Link to this heading">#</a></h2>
+<section id="planned-consultations">
+<h3>Planned Consultations<a class="headerlink" href="#planned-consultations" title="Link to this heading">#</a></h3>
+<p>The following query reports all the planned consultations:</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">PREFIX</span> <span class="nn">jolux</span><span class="p">:</span> <span class="nl">&lt;http://data.legilux.public.lu/resource/ontology/jolux#&gt;</span>
+<span class="k">SELECT</span> <span class="nv">?consultation</span> <span class="k">WHERE</span> <span class="p">{</span>
+ <span class="nv">?consultation</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">consultationStatus</span> <span class="nl">&lt;https://fedlex.data.admin.ch/vocabulary/consultation-status/1&gt;</span><span class="p">.</span> 
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="impacted-legal-resources">
+<h3>Impacted Legal Resources<a class="headerlink" href="#impacted-legal-resources" title="Link to this heading">#</a></h3>
+<p>The following query asks for all the impacted legal resources by currently ongoing consultations:</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">PREFIX</span> <span class="nn">jolux</span><span class="p">:</span> <span class="nl">&lt;http://data.legilux.public.lu/resource/ontology/jolux#&gt;</span>
+<span class="k">SELECT</span> <span class="nv">?consultation</span> <span class="nv">?resource</span> <span class="k">WHERE</span> <span class="p">{</span>
+ <span class="nv">?consultation</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">consultationStatus</span> <span class="nl">&lt;https://fedlex.data.admin.ch/vocabulary/consultation-status/2&gt;</span><span class="p">.</span>
+ <span class="nv">?consultation</span> <span class="nn">jolux</span><span class="p">:</span><span class="nt">foreseenImpactToLegalResource</span> <span class="nv">?resource</span><span class="p">.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultation">jolux:Consultation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uri">URI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#literals">Literals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outgoing-relations">Outgoing Relations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#incoming-relations">Incoming Relations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultationtask">jolux:ConsultationTask</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-consultationphase">jolux:ConsultationPhase</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Literals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Outgoing Relations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-positionstatementpublication">jolux:PositionStatementPublication</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Outgoing Relations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jolux-resultofaconsultationpublication">jolux:ResultOfAConsultationPublication</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Outgoing Relations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-representation">Visual Representation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-queries">Useful Queries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planned-consultations">Planned Consultations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#impacted-legal-resources">Impacted Legal Resources</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jean-Louis Morard, Benedikt Hitz-Gamper
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Federal Chancellery.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
